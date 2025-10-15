@@ -1,0 +1,116 @@
+/* Full page background */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000; /* black background */
+    color: #fff; /* default text color */
+}
+
+/* Page container */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+/* Filters container */
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* Filter input styling */
+.filters input {
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+    width: 150px;
+    box-sizing: border-box;
+}
+
+/* Exam cards */
+.exam-card {
+    background-color: #fff; /* white card */
+    color: #000; /* black text inside cards */
+    border-radius: 12px;
+    padding: 1.5rem;
+    width: 300px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Hover effect for cards */
+.exam-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.4);
+}
+
+/* Card headings */
+.exam-card h2 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+/* Card details */
+.exam-card p {
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* Page title */
+.page-container h1 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Header container */
+.header {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #111; /* slightly lighter than black */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Left text */
+.header .logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #fff;
+    width: 50%;
+}
+
+.header nav{
+    width: 50%;
+    text-align: center;
+}
+/* Right nav */
+.header nav a {
+    color: #fff;
+    margin-left: 1.5rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.header nav a:hover {
+    color: #0af; /* highlight on hover */
+}
+
+.mapinfo{
+    color: #000;
+}
